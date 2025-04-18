@@ -16,7 +16,7 @@ import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj.motorcontrol.PWMVictorSPX;
+import edu.wpi.first.wpilibj.motorcontrol.VictorSP;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -36,12 +36,12 @@ public class Robot extends TimedRobot {
   private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
    //Motors
-   private final PWMVictorSPX frontleftMotor = new PWMVictorSPX(1);
-   private final PWMVictorSPX backleftMotor = new PWMVictorSPX(2);
-   private final PWMVictorSPX frontrightMotor = new PWMVictorSPX(3);
-   private final PWMVictorSPX backrightMotor = new PWMVictorSPX(4);
-   private final PWMVictorSPX shooterMotor = new PWMVictorSPX(5);
-   private final PWMVictorSPX intakeMotor = new PWMVictorSPX(6);
+   private final VictorSP frontleftMotor = new VictorSP(1);
+   private final VictorSP backleftMotor = new VictorSP(2);
+   private final VictorSP frontrightMotor = new VictorSP(3);
+   private final VictorSP backrightMotor = new VictorSP(4);
+   private final VictorSP shooterMotor = new VictorSP(5);
+   private final VictorSP intakeMotor = new VictorSP(6);
    
    //Drivetrain
    private DifferentialDrive m_drive;
